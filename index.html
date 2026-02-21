@@ -3,148 +3,146 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diana Horodko | Мовні консультації</title>
+<title>Diana Horodko | Переклад та мовні консультації</title>
 
 <style>
 body {
-    font-family: "Georgia", serif;
     margin: 0;
-    background: #fafafa;
-    color: #222;
-    line-height: 1.8;
+    font-family: "Georgia", serif;
+    background-color: #f5f5f5;
+    color: #1f2a44;
+    line-height: 1.7;
 }
 
 .wrapper {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 80px 25px;
 }
 
-header {
+.hero {
+    background: linear-gradient(rgba(31,42,68,0.85), rgba(31,42,68,0.85)),
+    url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
+    background-size: cover;
+    background-position: center;
+    color: white;
     text-align: center;
-    margin-bottom: 80px;
+    padding: 160px 20px;
 }
 
-h1 {
-    font-size: 36px;
-    font-weight: 500;
+.hero h1 {
+    font-size: 46px;
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
 
-.subtitle {
-    font-size: 17px;
-    color: #666;
+.hero p {
+    font-size: 20px;
+    margin-bottom: 35px;
 }
 
-section {
-    margin-bottom: 70px;
+.btn {
+    background: #c6a75e;
+    color: white;
+    padding: 14px 34px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 3px;
 }
 
-h2 {
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 25px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.services {
+    text-align: center;
+}
+
+.services p {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+.form-section {
+    background: white;
+    padding: 60px;
+    border-radius: 6px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    font-size: 15px;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
     font-family: inherit;
-    background: #ffffff;
+    font-size: 15px;
 }
 
-textarea {
-    min-height: 130px;
+input:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #c6a75e;
 }
 
 button {
-    padding: 12px 28px;
-    border: 1px solid #222;
-    background: transparent;
-    font-size: 14px;
+    background: #1f2a44;
+    color: white;
+    padding: 14px;
+    border: none;
+    font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
-    background: #222;
-    color: #fff;
+    background: #c6a75e;
 }
 
 footer {
-    border-top: 1px solid #ddd;
-    padding-top: 30px;
-    font-size: 13px;
-    color: #666;
-}
-
-a {
-    color: #222;
-    text-decoration: none;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    background: #1f2a44;
+    color: white;
 }
 </style>
 </head>
 
 <body>
 
-<div class="wrapper">
-
-<header>
+<header class="hero">
     <h1>Diana Horodko</h1>
-    <div class="subtitle">
-        Професійні мовні консультації та англійсько-український переклад
-    </div>
+    <p>Професійний переклад та мовні консультації</p>
+    <a href="#contact" class="btn">Замовити консультацію</a>
 </header>
 
-<section>
-    <h2>Консультації</h2>
-    <p>
-    Індивідуальні мовні консультації для бізнесу та приватних клієнтів.
-    Допомога у формулюванні офіційних документів, міжнародній комунікації
-    та підготовці англомовних текстів.
-    </p>
+<section class="wrapper services">
+    <h2 class="section-title">Послуги</h2>
+    <p>Надаю професійні переклади та індивідуальні мовні консультації для бізнесу та приватних клієнтів.</p>
+    <p>Гарантую конфіденційність, точність та відповідальність у кожному проєкті.</p>
 </section>
 
-<section>
-    <h2>Форма запиту</h2>
-
-    <form action="https://formsubmit.co/ВАШ_EMAIL" method="POST">
-
-        <input type="text" name="name" placeholder="Ваше ім'я" required>
-        <input type="email" name="email" placeholder="Ваш Email" required>
-        <textarea name="message" placeholder="Опишіть ваш запит" required></textarea>
-
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://твій_логін.github.io/diana-consulting/thankyou.html">
-
-        <button type="submit">Надіслати запит</button>
-    </form>
-
-    <p style="font-size:13px; color:#777;">
-        Надсилаючи форму, ви погоджуєтесь з 
-        <a href="privacy.html">Політикою конфіденційності</a>.
-    </p>
-</section>
-
-<section>
-    <h2>Контакти</h2>
-    Телефон: +380936942936<br>
-    м. Коломия, Україна
+<section class="wrapper">
+    <div class="form-section" id="contact">
+        <h2 class="section-title">Запит на консультацію</h2>
+        <form action="https://formspree.io/f/yourcode" method="POST">
+            <input type="text" name="name" placeholder="Ваше ім’я" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="5" placeholder="Коротко опишіть ваш запит" required></textarea>
+            <button type="submit">Надіслати запит</button>
+        </form>
+    </div>
 </section>
 
 <footer>
-    ФОП Городько Діана Володимирівна<br>
-    Єдиний податок, 2 група | Зареєстровано 29.01.2026
+© 2026 Diana Horodko | Всі права захищені
 </footer>
-
-</div>
 
 </body>
 </html>
-    
